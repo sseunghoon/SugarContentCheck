@@ -1,0 +1,24 @@
+from django.db import models
+
+class Result(models.Model):
+    intensity_sum = models.IntegerField(default=0)
+    serial_num = models.IntegerField(default=0)
+    unit = models.IntegerField(default=0)
+    
+    def __str__(self):
+        return self.unit
+    
+class Question(models.Model):
+    number = models.IntegerField(unique=True)
+    content = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return f'{self.number}. {self.content}'
+
+class Choice(models.Model):
+    content = models.CharField(max_length=100)
+    intentsity = models.IntegerField(default=0)
+    question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.content

@@ -146,9 +146,25 @@ body {
     padding:20px 0 30px;
 }
 
+.result_data li{
+    font-size:15px;
+    padding-bottom:20px;
+}
 
+.weniv{
+    display:flex;
+    justify-content:center;
+    padding-bottom:50px;
+}
 
+.weniv a{
+    width:100%;
+}
 
+.weniv img{
+    width:100%;
+    height:auto;
+}
 
 
 
