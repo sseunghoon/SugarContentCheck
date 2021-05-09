@@ -19,10 +19,31 @@ def index(request):
 
 def form(request):
     questions = Question.objects.all()
-    questions_count = Question.objects.all().count()
+    questions_count = Question.objects.count()
     
     context = {
         'questions':questions,
         'questions_count':questions_count,
     }
     return render(request, 'form.html', context)
+
+def result(request):
+    question_cnt = Question.objects.count()
+    intensity_sum=0
+    
+    
+    for i in range(1, question_cnt+1):
+        intensity = int(request.POST[f'question-{i}'][0])
+        intensity_sum += intensity
+
+    context = {
+        'intensity_sum': intensity_sum,
+    }
+
+    return render(request, 'result.html', context)
+
+
+
+
+
+

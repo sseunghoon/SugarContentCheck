@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -5,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -17,66 +18,34 @@
                 {% for question in questions %}
                     <div class="test">
                         <div class="question_container">
-                            <h3 class="number">{{question.number}}/{{question_count}} </h3>
+                            <h3 class="number">{{question.number}}/{{questions_count}} </h3>
                             <h3 class="question">{{question.content}}</h3>
                         </div>
                         <div class="answer">
-                            {% for choice in question.choice_set %}
+                            {% for choice in question.choice_set.all %}
                                 <div>
                                     <input id="choice-{{choice.pk}}" type="radio" name="question-{{ question.number}}" value="{{choice.intensity}}">
                                     <label for="choice-{{choice.pk}}" for="">{{choice.content}}</label>
                                 </div>
                             {% endfor %}
                         </div>
-                        <div class="btn_wrap">
-                            <buttom class="next_btn">다 음</buttom>
-                        </div>    
-                    </div>
+                        {% if not forlopp.first %}
+                        <div class="btn_wrap bnt_sort">
+                        {% else %}
+                            <div class="btn_wrap">
+                        {% endif %}
+                        {% if not forlopp.first %}
+                                <buttom class="prev_btn">이 전</buttom>
+                        {% endif %}
+                        {% if not forlopp.first %}
+                                <buttom class="next_btn">다 음</buttom>
+                        {% else %}
+                                <input type="submit" value="확 인" class="submit_btn"/>
+                        {% endif %}
+                            </div>
+                        </div>
                 {% endfor %}
-                
-                
-                <div class="test">
-                    <div class="question_container">
-                        <h3 class="number">1/3</h3>
-                        <h3 class="question">잠자리?</h3>
-                    </div>
-                    <div class="answer">
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one" for="">침상</label>    
-                        </div>
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one" for="">침대</label>    
-                        </div>
-                    </div>
-                    <div class="btn_wrap bnt_sort">
-                        <buttom class="prev_btn">이 전</buttom>
-                        <buttom class="next_btn">다 음</buttom>
-                    </div>
                 </div>
-                
-                <div class="test">
-                    <div class="question_container">
-                        <h3 class="number">1/3</h3>
-                        <h3 class="question">잠자리?</h3>
-                    </div>
-                    <div class="answer">
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one" for="">침상</label>    
-                        </div>
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one" for="">침대</label>    
-                        </div>
-                    </div>
-                    <div class="btn_wrap bnt_sort">
-                        <buttom class="prev_btn">이 전</buttom>
-                        <input type="submit" value="완 료" class="submit_btn"/>
-                    </div>    
-                </div>
-                
             </form>
         </div>
     </section>

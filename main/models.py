@@ -17,7 +17,7 @@ class Question(models.Model):
 
 class Choice(models.Model):
     content = models.CharField(max_length=100)
-    intentsity = models.IntegerField(default=0)
+    intensity = models.IntegerField(default=0)
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE)
     
     def __str__(self):

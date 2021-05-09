@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -8,8 +9,8 @@
         <!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
         
         
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -17,7 +18,7 @@
         <div class="wrapper">
             <div class="title">
                 <h3 class="main_title">군생활 강도 측정</h3>
-                <h3 class="main_title">Military Life Intensity Check</h3>           
+                <h4 class="sub_title">Military Life Intensity Check</h4>
             </div>
             <div class="intro">
                 <h1>당신의 군생활 강도는?</h1>
@@ -31,35 +32,30 @@
                     </ul>
                 </div>
             </div>
-            <div class="buttons">
-                <a href="#">
+            
+            <div class="button">
+                <a href="/form/">
                     <button class="start" type="button">시작하기</button>
                 </a>
             </div>
+            
             <div class="result_data">
                 <div class="data_wrap">
                     <h3>참여자 수</h3>
                     <ul>
-                        <li>1:0명</li>
-                        <li>2:0명</li>
-                        <li>3:0명</li>
-                        <li>4:0명</li>
-                        <li>5:0명</li>
+                        <li>총 {{ total_num }} 명</li>
+                        <li>육군 : {{ army_num }} 명</li>
+                        <li>해군 : {{ navy_num }} 명</li>
+                        <li>공군 : {{ airforce_num }} 명</li>
                     </ul>
                 </div>
             </div>
             
-            <p>총 {{ total_num }} 명</p>
-            <p>육군 : {{ army_num }} 명</p>
-            <p>해군 : {{ navy_num }} 명</p>
-            <p>공군 : {{ airforce_num }} 명</p>
-            
-            
-            <div class="weniv">
+            <!-- <div class="weniv">
                 <a href="http://www.paullab.co.kr">
                     <img src="img/weniv_logo_black.png" alt="weniv" />
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 

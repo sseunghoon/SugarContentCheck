@@ -1,0 +1,37 @@
+[
+{
+    "model": "main.result",
+    "pk": 1,
+    "fields": {
+        "intensity_sum": 30,
+        "serial_num": 20,
+        "unit": 0
+    }
+},
+{
+    "model": "main.question",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "content": "잠자리?"
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 1,
+    "fields": {
+        "content": "침대",
+        "intensity": 0,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 2,
+    "fields": {
+        "content": "침상",
+        "intensity": 8,
+        "question": 1
+    }
+}
+]

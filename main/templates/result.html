@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -12,8 +13,8 @@
         <meta property="og:url" content="" />
         <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
         
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/result.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -22,7 +23,7 @@
             <div class="result">
                 <div class="titles">
                     <h3>보이지 않는 것을 본 당신은..!</h3>
-                    <h1>프론트엔드 개발자</h1>
+                    <h1>당신의 군생활 강도:{{intensity_sum}}</h1>
                 </div>
                 <div class="result_img">
                     <img src="img/프론트엔드.png" alt="frontend">
@@ -81,7 +82,7 @@
                 <ul>
                     <li>
                         <h3>...이건 내가 아냐..잘못된게 분명해!</h3>
-                        <a href="#">
+                        <a href="/form">
                             <button type="button">테스트 다시 하기</button>
                         </a>
                     </li>
