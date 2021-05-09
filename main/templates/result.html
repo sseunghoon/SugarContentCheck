@@ -14,7 +14,7 @@
         <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
         
         <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/result1.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -26,12 +26,12 @@
                     <h1>당신의 군생활 강도:{{intensity_sum}}</h1>
                 </div>
                 <div class="result_img">
-                    <img src="img/프론트엔드.png" alt="frontend">
+                    <img src="{% static 'img/front.png'%}" alt="frontend">
                 </div>
             </div>
             <div class="result_explains">
                 <div class="explain">
-                    <h3 class="title">강의 추천</h3>
+                    <h3 class="title">나와 맞는 개발 유형은</h3>
                     <ul>
                         <li>123</li>
                         <li>123</li>
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="explain">
-                    <h3 class="title">나와 맞는 개발 유형은 백엔드 개발자?!</h3>
+                    <h3 class="title">11111111111111111111</h3>
                     <ul>
                         <li>123</li>
                         <li>123</li>
@@ -47,7 +47,7 @@
                     </ul>
                 </div>
                 <div class="explain">
-                    <h3 class="title">나와 맞는 개발 유형은 백엔드 개발자?!</h3>
+                    <h3 class="title">2222222222222222222</h3>
                     <ul>
                         <li>123</li>
                         <li>123</li>
@@ -55,8 +55,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="lectures">
-                <h3 class="title">나와 맞는 개발 유형은 백엔드 개발자?!</h3>
+            <!-- <div class="lectures">
+                <h3 class="title">333333333333333333333333333</h3>
                 <ul>
                     <li>
                         <a href="" target="_blank">
@@ -66,7 +66,7 @@
                             <button type="button">강의 보러가기</button>                        </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="share">
                 <div class="url">
                     <button class="copy_btn" type="button">URL 복사하기</button>
@@ -118,7 +118,7 @@
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="{% static 'js/result.js' %} "></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     
     

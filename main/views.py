@@ -33,8 +33,8 @@ def result(request):
     
     
     for i in range(1, question_cnt+1):
-        intensity = int(request.POST[f'question-{i}'][0])
-        intensity_sum += intensity
+        intensity = int(request.POST[f'question-{i}'])
+        intensity_sum = intensity_sum + intensity
 
     context = {
         'intensity_sum': intensity_sum,

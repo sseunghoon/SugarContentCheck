@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
         <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/form3.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -29,16 +29,16 @@
                                 </div>
                             {% endfor %}
                         </div>
-                        {% if not forlopp.first %}
-                        <div class="btn_wrap bnt_sort">
+                        {% if not forloop.first %}
+                        <div class="btn_wrap btn_sort">
                         {% else %}
                             <div class="btn_wrap">
                         {% endif %}
-                        {% if not forlopp.first %}
-                                <buttom class="prev_btn">이 전</buttom>
+                        {% if not forloop.first %}
+                                <button class="prev_btn">이 전</button>
                         {% endif %}
-                        {% if not forlopp.first %}
-                                <buttom class="next_btn">다 음</buttom>
+                        {% if not forloop.last %}
+                                <button class="next_btn">다 음</button>
                         {% else %}
                                 <input type="submit" value="확 인" class="submit_btn"/>
                         {% endif %}
@@ -51,7 +51,7 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="{% static 'js/form1.js' %} "></script>
     
 </body>
 </html>

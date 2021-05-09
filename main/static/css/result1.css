@@ -77,7 +77,7 @@ button:hover{
     height:324px;
 }
 
-.result_img igm{
+.result_img img{
     width:100%;
     height:100%;
 }
@@ -87,7 +87,6 @@ button:hover{
     flex-direction:column;
     align-items:center;
     width:100%;
-    height:100%;
     padding-bottom:50px;
     line-height:1.5;    
 }
@@ -125,7 +124,7 @@ button:hover{
     margin-bottom:50px;
 }
 
-.lectures title{
+.lectures .title{
     text-align:center;
     width:400px;
     font-size:30px;
@@ -170,7 +169,7 @@ button:hover{
 }
 
 .lectures a{
-     cursor:pointer;
+    cursor:pointer;
     text-decoration:none;
     color:inherit;
     overflow:hidden;
@@ -205,13 +204,17 @@ button:hover{
 }
 
 .share{
-    padding-bottom:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px 0 20px;
     margin-bottom:50px;
+    border-top: 3px solid #EA7E7C;
     border-bottom: 3px solid #EA7E7C;
 }
 
 .share button{
-    magin-bottom:30px;
+    margin-bottom:30px;
 }
 
 .facebook_share{
@@ -224,6 +227,9 @@ button:hover{
 }
 
 .buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     padding-bottom:50px;
 }
 
