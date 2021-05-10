@@ -37,21 +37,49 @@
                         {% if not forloop.first %}
                                 <button class="prev_btn">이 전</button>
                         {% endif %}
-                        {% if not forloop.last %}
                                 <button class="next_btn">다 음</button>
-                        {% else %}
-                                <input type="submit" value="확 인" class="submit_btn"/>
-                        {% endif %}
                             </div>
                         </div>
                 {% endfor %}
+                    <div class="test">
+                        <div class="question_container">
+                            <h2 class="question">소속과 군번</h2>
+                        </div>
+                        <div class="answer">
+                            <select name="belong">
+                              <option value="1">육군</option>
+                              <option value="2">해군</option>
+                              <option value="3">공군</option>
+                            </select>
+                        </div>
+                        <div class="answer">
+                            <select name="serial_num">
+                              <option value="21">21</option>
+                              <option value="20">20</option>
+                              <option value="19">19</option>
+                              <option value="18">18</option>
+                              <option value="17">17</option>
+                              <option value="16">16</option>
+                              <option value="15">15</option>
+                              <option value="14">14</option>
+                              <option value="13">13</option>
+                              <option value="12">12</option>
+                              <option value="11">11</option>
+                              <option value="10">10이하</option>
+                            </select>
+                        </div>
+                        <div class="btn_wrap btn_sort">
+                                <button class="prev_btn">이 전</button>
+                                <input type="submit" value="확 인" class="submit_btn"/>
+                            </div>
+                        </div>
                 </div>
             </form>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="{% static 'js/form1.js' %} "></script>
+    <script type="text/javascript" src="{% static 'js/form2.js' %} "></script>
     
 </body>
 </html>

@@ -1,14 +1,5 @@
 [
 {
-    "model": "main.result",
-    "pk": 1,
-    "fields": {
-        "intensity_sum": 30,
-        "serial_num": 20,
-        "unit": 0
-    }
-},
-{
     "model": "main.question",
     "pk": 1,
     "fields": {

@@ -3,10 +3,10 @@ from django.db import models
 class Result(models.Model):
     intensity_sum = models.IntegerField(default=0)
     serial_num = models.IntegerField(default=0)
-    unit = models.IntegerField(default=0)
+    belong = models.IntegerField(default=0)
     
     def __str__(self):
-        return self.unit
+        return str(self.intensity_sum)
     
 class Question(models.Model):
     number = models.IntegerField(unique=True)
