@@ -108,7 +108,7 @@ button:hover{
 
 .result_explains ul{
     padding: 0 20px;
-    list-style:disc;
+    list-style:none;
 }
 
 .result_explains li{

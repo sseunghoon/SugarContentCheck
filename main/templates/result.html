@@ -31,27 +31,31 @@
             </div>
             <div class="result_explains">
                 <div class="explain">
-                    <h3 class="title">나와 맞는 개발 유형은</h3>
+                    <h3 class="title">다른 참여자들과 비교한다면?</h3>
                     <ul>
-                        <li>123</li>
-                        <li>123</li>
-                        <li>123</li>
-                    </ul>
-                </div>
-                <div class="explain">
-                    <h3 class="title">11111111111111111111</h3>
-                    <ul>
-                        <li>123</li>
-                        <li>123</li>
-                        <li>123</li>
-                    </ul>
-                </div>
-                <div class="explain">
-                    <h3 class="title">2222222222222222222</h3>
-                    <ul>
-                        <li>123</li>
-                        <li>123</li>
-                        <li>123</li>
+                        {% if isTop %}
+                        <li>모든 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{percentage}}%입니다. </li>
+                        {% else %}
+                        <li>모든 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{percentage}}%입니다. </li>
+                        {% endif %}
+                        
+                        {% if isTop %}
+                        <li>{{belong_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% else %}
+                        <li>{{belong_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        {% endif %}
+                        
+                        {% if isTop %}
+                        <li>{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% else %}
+                        <li>{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        {% endif %}
+                        
+                        {% if isTop %}
+                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% else %}
+                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
