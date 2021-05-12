@@ -14,7 +14,7 @@
         <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
         
         <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/result1.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
         <title>군생활 강도측정</title>
     </head>
 <body>
@@ -23,7 +23,7 @@
             <div class="result">
                 <div class="titles">
                     <h1>당신의 군생활 강도:{{intensity_sum}}</h1>
-                    <h3>꽤나 달달한 편입니다...</h3>
+                    <h3>{{summary}}</h3>
                 </div>
                 <div class="result_img">
                     <img src="{% static 'img/front.png'%}" alt="frontend">
@@ -39,38 +39,35 @@
                         <li>모든 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{percentage}}%입니다. </li>
                         {% endif %}
                         
-                        {% if isTop %}
-                        <li>{{belong_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% if belongIsTop %}
+                        <li>{{belong_str}} 참여자들 중 {{belongRank}}/{{belongResult_cnt}} 등, 상위 {{ belongPercentage }}%입니다. </li>
                         {% else %}
-                        <li>{{belong_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        <li>{{belong_str}} 참여자들 중 {{belongRank}}/{{belongResult_cnt}} 등, 하위 {{ belongPercentage }}%입니다. </li>
                         {% endif %}
                         
-                        {% if isTop %}
-                        <li>{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% if serialIsTop %}
+                        <li>{{serial_str}} 참여자들 중 {{serialRank}}/{{serialResult_cnt}} 등, 상위 {{ serialPercentage }}%입니다. </li>
                         {% else %}
-                        <li>{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        <li>{{serial_str}} 참여자들 중 {{serialRank}}/{{serialResult_cnt}} 등, 하위 {{ serialPercentage }}%입니다. </li>
                         {% endif %}
                         
-                        {% if isTop %}
-                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 상위 {{ percentage }}%입니다. </li>
+                        {% if customIsTop %}
+                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{customRank}}/{{customResult_cnt}} 등, 상위 {{ customPercentage }}%입니다. </li>
                         {% else %}
-                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{rank}}/{{result_cnt}} 등, 하위 {{ percentage }}%입니다. </li>
+                        <li>{{belong_str}}+{{serial_str}} 참여자들 중 {{customRank}}/{{customResult_cnt}} 등, 하위 {{ customPercentage }}%입니다. </li>
                         {% endif %}
                     </ul>
                 </div>
-            </div>
-            <!-- <div class="lectures">
-                <h3 class="title">333333333333333333333333333</h3>
+                <div class="buttons">
                 <ul>
                     <li>
-                        <a href="" target="_blank">
-                            <img src="img/lec_web_fullstack.png" 
-                                 alt="제주코딩베이스캠프 기본강좌">
-                            <h3>Python 부트캠프</h3>
-                            <button type="button">강의 보러가기</button>                        </a>
+                        <a href="/form">
+                            <button type="button">테스트 다시 하기</button>
+                        </a>
                     </li>
                 </ul>
-            </div> -->
+            </div>
+            </div>
             <div class="share">
                 <div class="url">
                     <button class="copy_btn" type="button">URL 복사하기</button>
@@ -82,43 +79,6 @@
                     <button class="kakao_share" type="button">카카오톡 공유하기</button>
                 </div>
             </div>
-            <div class="buttons">
-                <ul>
-                    <li>
-                        <h3>...이건 내가 아냐..잘못된게 분명해!</h3>
-                        <a href="/form">
-                            <button type="button">테스트 다시 하기</button>
-                        </a>
-                    </li>
-                    <li>
-                        <h3>다른 사람들은 어떤 유형일까?</h3>
-                        <a href="#">
-                            <button type="button">다른 결과 알아보기</button>
-                        </a>
-                    </li>
-                    <li>
-                        <h3>이런 테스트는 도대체 누가 만든거야?</h3>
-                        <a href="#">
-                            <button class="color" type="button">제주코딩베이스캠프</button>
-                        </a>
-                    </li>
-                    <li>
-                        <h3>나는 며칠동안 훈련해야 전문가가 될까?</h3>
-                        <a href="#">
-                            <button type="button">1만시간의 법칙</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="weniv">
-                <a href="http://www.paullab.co.kr">
-                    <img src="img/weniv_logo_black.png" alt="weniv" />
-                </a>
-            </div>
-            <p>
-                ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
-수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-            </p>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

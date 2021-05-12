@@ -7,9 +7,9 @@ from django.urls import reverse
 
 def index(request):
     total_num = Result.objects.count()
-    army_num = Result.objects.filter(serial_num=0).count()
-    navy_num = Result.objects.filter(serial_num=1).count()
-    airforce_num = Result.objects.filter(serial_num=2).count()
+    army_num = Result.objects.filter(belong=1).count()
+    navy_num = Result.objects.filter(belong=2).count()
+    airforce_num = Result.objects.filter(belong=3).count()
 
     context = {
         'total_num': total_num,
@@ -80,14 +80,21 @@ def result(request):
 
     #####################################################
 
-    belongResult_cnt = Result.objects.count()
-    belongResults = Result.objects.all()
+    belongs = {
+        1: 1,
+        2: 2,
+        3: 3,
+    }
+
+    belongResult_cnt = Result.objects.filter(belong=belongs[belong]).count()
+    belongResults = Result.objects.filter(belong=belongs[belong])
+
     belongResult_low_cnt = 0
 
     for br in belongResults:
         if(br.intensity_sum <= intensity_sum):
             belongResult_low_cnt += 1
-    
+
     belongResult_high_cnt = belongResult_cnt - belongResult_low_cnt
 
     belongRank = belongResult_high_cnt + 1
@@ -101,8 +108,22 @@ def result(request):
 
     #####################################################
 
-    serialResult_cnt = Result.objects.count()
-    serialResults = Result.objects.all()
+    serials = {
+        21: 21,
+        20: 20,
+        19: 19,
+        18: 18,
+        17: 17,
+        16: 16,
+        15: 15,
+        14: 14,
+        13: 13,
+        12: 12,
+    }
+
+    serialResult_cnt = Result.objects.filter(serial_num=serials[serial_num]).count()
+    serialResults = Result.objects.filter(serial_num=serials[serial_num])
+
     serialResult_low_cnt = 0
 
     for sr in serialResults:
@@ -120,6 +141,30 @@ def result(request):
         serialIsTop = 0
         serialPercentage = 100-serialPercentage
 
+    #####################################################
+
+    customResult_cnt = Result.objects.filter(belong=belongs[belong], serial_num=serials[serial_num]).count()
+    customResult = Result.objects.filter(belong=belongs[belong], serial_num=serials[serial_num])
+    
+    customResult_low_cnt = 0
+
+    for cr in customResult:
+        if(cr.intensity_sum <= intensity_sum):
+            customResult_low_cnt += 1
+
+    customResult_high_cnt = customResult_cnt - customResult_low_cnt
+
+    customRank = customResult_high_cnt + 1
+    customPercentage = round(customRank / customResult_cnt * 100, 2)
+
+    if(customPercentage <= 50):
+        customIsTop = 1
+    else:
+        customIsTop = 0
+        customPercentage = 100-customPercentage
+
+    #####################################################
+
     if(belong == 1):
         belong_str = "육군"
     elif(belong == 2):
@@ -128,6 +173,17 @@ def result(request):
         belong_str = "공군"
 
     serial_str = str(serial_num)+"군번"
+
+    summary = ""
+    
+    if intensity_sum <= 25:
+        summary = "똥 묻은 꿀"
+    elif intensity_sum <= 50:
+        summary = "꿀 묻은 똥"
+    elif intensity_sum <= 75:
+        summary = "도대체 어떤 삶을..?"
+    else:
+        summary = "82년생 김준호"
 
     #####################################################
 
@@ -149,6 +205,11 @@ def result(request):
         'serialIsTop': serialIsTop,
         'belong_str': belong_str,
         'serial_str': serial_str,
+        'customResult_cnt': customResult_cnt,
+        'customPercentage': customPercentage,
+        'customRank': customRank,
+        'customIsTop': customIsTop,
+        'summary': summary,
     }
 
     return render(request, 'result.html', context)
