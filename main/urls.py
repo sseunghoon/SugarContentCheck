@@ -6,5 +6,6 @@ app_name = 'main'
 urlpatterns = [
     path('', views.index, name='index'),
     path('form/', views.form, name='form'),
-    path('result/', views.result, name='result'),
+    path('submit/', views.submit, name='submit'),
+    path('result/<int:result_id>', views.result, name='result'),
 ]

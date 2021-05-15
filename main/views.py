@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from .models import Question, Result, Choice
@@ -40,7 +40,7 @@ def form(request):
 #     return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 
-def result(request):
+def submit(request):
     question_cnt = Question.objects.count()
     intensity_sum = 0
 
@@ -56,6 +56,17 @@ def result(request):
     result.serial_num = serial_num
     result.belong = belong
     result.save()
+
+    result_id = Result.objects.count()
+
+    return redirect('main:result', result_id=result_id)
+
+
+def result(request, result_id):
+    result = Result.objects.get(pk=result_id)
+    belong = result.belong
+    serial_num = result.serial_num
+    intensity_sum = result.intensity_sum
 
     #####################################################
 
@@ -145,7 +156,7 @@ def result(request):
 
     customResult_cnt = Result.objects.filter(belong=belongs[belong], serial_num=serials[serial_num]).count()
     customResult = Result.objects.filter(belong=belongs[belong], serial_num=serials[serial_num])
-    
+
     customResult_low_cnt = 0
 
     for cr in customResult:
@@ -175,7 +186,7 @@ def result(request):
     serial_str = str(serial_num)+"군번"
 
     summary = ""
-    
+
     if intensity_sum <= 25:
         summary = "똥 묻은 꿀"
     elif intensity_sum <= 50:
@@ -184,6 +195,11 @@ def result(request):
         summary = "도대체 어떤 삶을..?"
     else:
         summary = "82년생 김준호"
+
+    percentage = format(percentage, '.2f')
+    belongPercentage = format(belongPercentage, '.2f')
+    serialPercentage = format(serialPercentage, '.2f')
+    customPercentage = format(customPercentage, '.2f')
 
     #####################################################
 
@@ -212,9 +228,7 @@ def result(request):
         'summary': summary,
     }
 
-    return render(request, 'result.html', context)
-
-
+    return render(request, 'result.html', context=context)
 
 
 
