@@ -1,16 +1,13 @@
+{% extends 'main/base.html' %}
 {% load static %}
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/form3.css' %}">
-        <title>군생활 강도측정</title>
-    </head>
-<body>
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/form1.css' %}">
+{% endblock head %}
+        
+{% block body %}
+
     <section id="survey">
         <div class="wrapper">
             <form id="form" action="{% url 'main:submit' %}" method='post'>
@@ -46,14 +43,14 @@
                             <h2 class="question">소속과 군번</h2>
                         </div>
                         <div class="answer">
-                            <select name="belong">
+                            <select name="belong" class="select">
                               <option value="1">육군</option>
                               <option value="2">해군</option>
                               <option value="3">공군</option>
                             </select>
                         </div>
                         <div class="answer">
-                            <select name="serial_num">
+                            <select name="serial_num" class="select">
                               <option value="21">21</option>
                               <option value="20">20</option>
                               <option value="19">19</option>
@@ -78,8 +75,11 @@
         </div>
     </section>
 
+{% endblock body %}
+
+{% block js %}
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="{% static 'js/form2.js' %} "></script>
-    
-</body>
-</html>
+    <script type="text/javascript" src="{% static 'js/form.js' %} "></script>
+
+{% endblock js %}

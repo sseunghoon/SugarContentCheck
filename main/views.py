@@ -17,7 +17,7 @@ def index(request):
         'navy_num': navy_num,
         'airforce_num': airforce_num,
     }
-    return render(request, 'index.html', context)
+    return render(request, 'main/index.html', context)
 
 
 def form(request):
@@ -28,7 +28,7 @@ def form(request):
         'questions': questions,
         'questions_count': questions_count,
     }
-    return render(request, 'form.html', context)
+    return render(request, 'main/form.html', context)
 
 # def vote(request, question_id):
 #     question = get_object_or_404(Question, pk=question_id)
@@ -228,7 +228,7 @@ def result(request, result_id):
         'summary': summary,
     }
 
-    return render(request, 'result.html', context=context)
+    return render(request, 'main/result.html', context=context)
 
 
 

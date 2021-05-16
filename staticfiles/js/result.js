@@ -15,8 +15,8 @@ function sendLink(){
             description:'내 군생활 강도는?',
             imageUrl:'https://mbit.weniv.co.kr/static/img/mbit_thumbnail.png',
             link:{
-                mobileWebUrl:'https://mbit.weniv.co.kr',
-                webUrl:'https://mbit.weniv.co.kr',
+                mobileWebUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
+                webUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
             },
         },
         social:{
@@ -35,8 +35,8 @@ function sendLink(){
         {
             title:'테스트 하러가기',
             link:{
-                webUrl:'https://mbit.weniv.co.kr',
-                mobileWebUrl:'https://mbit.weniv.co.kr',
+                webUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
+                mobileWebUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
             },
         },
         ],
@@ -60,18 +60,19 @@ function copyUrl(){
     tmp.value = url;
     tmp.select();
     document.execCommand("copy");
-    document.body.removeChile(tmp);
+    document.body.removeChild(tmp);
     
     alert("URL이 복사되었습니다.");
 }
 
 function sharefacebook(){
-    let url = window.location.href;
-    let facebook = 'http://www.facebook.com/sharer/sharer/php?u=';
+    let url = location.href;
+    let facebook = 'http://www.facebook.com/sharer/sharer.php?u=';
     let link = facebook + url;
     window.open(link);
+    
 }
 
 copyBtn.addEventListener('click', copyUrl);
-sharefacebook.addEventListener('click', sharefacebook);
-kakaoShare.addEventListener('click, sendLink');
+facebookShare.addEventListener('click', sharefacebook);
+kakaoShare.addEventListener('click', sendLink);

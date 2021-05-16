@@ -1,23 +1,20 @@
+{% extends 'main/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
+{% block head %}
+<!-- 네이버 구글 등 검색 표준 메타 데이터 삽입 시 검색이 더 잘됨 -->
         
-        <!-- 아래 메타 데이터들은 공유 시 링크위 썸네일을 표시해주는 것들 -->
-        <meta property="og:title" content="나의 개발 유형은?" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
+<!-- 아래 메타 데이터들은 공유 시 링크위 썸네일을 표시해주는 것들 -->
+    <meta property="og:title" content="나의 개발 유형은?" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?" />
         
-        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
-        <title>군생활 강도측정</title>
-    </head>
-<body>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
+{% endblock head %}
+
+{% block body %}
+
     <section class="main_contents">
         <div class="wrapper">
             <div class="result">
@@ -26,8 +23,9 @@
                     <h3>{{summary}}</h3>
                 </div>
                 <div class="result_img">
-                    <img src="{% static 'img/front.png'%}" alt="frontend">
+                    <img src="{% static 'img/honey.jpg'%}" alt="frontend">
                 </div>
+                <br>
             </div>
             <div class="result_explains">
                 <div class="explain">
@@ -81,10 +79,13 @@
             </div>
         </div>
     </section>
+
+{% endblock body %}
+
+{% block js %}
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="{% static 'js/result.js' %} "></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     
-    
-</body>
-</html>
+{% endblock js %}
