@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
-from .models import Question, Result, Choice
+from .models import Question, Result, Choice, Feedback
 from django.urls import reverse
 
 
@@ -226,10 +226,20 @@ def result(request, result_id):
         'customRank': customRank,
         'customIsTop': customIsTop,
         'summary': summary,
+        'result_id': result_id,
     }
 
     return render(request, 'main/result.html', context=context)
 
 
+def feedback(request):
 
+    content = request.POST[f'feedback_content']
+    result_id = request.POST[f'result_id']
+
+    feedback = Feedback()
+    feedback.content = content
+    feedback.save()
+
+    return redirect('main:result', result_id=result_id)
 

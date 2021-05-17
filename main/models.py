@@ -25,3 +25,10 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.content
+
+
+class Feedback(models.Model):
+    content = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.content

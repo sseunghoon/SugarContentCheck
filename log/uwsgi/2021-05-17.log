@@ -1,0 +1,911 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 12:58:22 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40555 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x5617e056e6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5617e056e6a0 pid: 772 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 772)
+spawned uWSGI worker 1 (pid: 776, cores: 1)
+spawned uWSGI http 1 (pid: 777)
+subprocess 773 exited with code 0
+[pid: 776|app: 0|req: 1/1] 172.17.0.1 () {48 vars in 2482 bytes} [Mon May 17 12:58:23 2021] GET / => generated 2060 bytes in 107 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 776|app: -1|req: -1/2] 172.17.0.1 () {44 vars in 2398 bytes} [Mon May 17 12:58:23 2021] GET /static/css/reset.css => generated 990 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 776|app: -1|req: -1/3] 172.17.0.1 () {44 vars in 2398 bytes} [Mon May 17 12:58:23 2021] GET /static/css/style.css => generated 2696 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 776|app: 0|req: 2/4] 172.17.0.1 () {48 vars in 2454 bytes} [Mon May 17 12:58:23 2021] GET /favicon.ico => generated 2814 bytes in 21 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /mlic
+[pid: 776|app: 0|req: 3/5] 172.17.0.1 () {46 vars in 2436 bytes} [Mon May 17 12:58:51 2021] GET /mlic => generated 2793 bytes in 7 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /mlic
+[pid: 776|app: 0|req: 4/6] 172.17.0.1 () {48 vars in 2467 bytes} [Mon May 17 12:59:24 2021] GET /mlic => generated 2793 bytes in 11 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 776|app: 0|req: 5/7] 172.17.0.1 () {46 vars in 2428 bytes} [Mon May 17 12:59:28 2021] GET / => generated 2060 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 777)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 12:59:35 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39088 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x55c2d3d836a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c2d3d836a0 pid: 852 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 852)
+spawned uWSGI worker 1 (pid: 855, cores: 1)
+spawned uWSGI http 1 (pid: 856)
+subprocess 853 exited with code 0
+Not Found: /
+[pid: 855|app: 0|req: 1/1] 172.17.0.1 () {48 vars in 2459 bytes} [Mon May 17 12:59:37 2021] GET / => generated 2183 bytes in 34 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 855|app: 0|req: 2/2] 172.17.0.1 () {46 vars in 2436 bytes} [Mon May 17 12:59:42 2021] GET /mlic => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 855|app: 0|req: 3/3] 172.17.0.1 () {46 vars in 2438 bytes} [Mon May 17 12:59:42 2021] GET /mlic/ => generated 2065 bytes in 51 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 855|app: 0|req: 4/4] 172.17.0.1 () {48 vars in 2521 bytes} [Mon May 17 12:59:44 2021] GET /mlic/form/ => generated 34682 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 855|app: -1|req: -1/5] 172.17.0.1 () {44 vars in 2440 bytes} [Mon May 17 12:59:44 2021] GET /static/js/form.js => generated 1512 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/6] 172.17.0.1 () {44 vars in 2461 bytes} [Mon May 17 12:59:44 2021] GET /static/css/form1.css => generated 1930 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/7] 172.17.0.1 () {44 vars in 2492 bytes} [Mon May 17 12:59:44 2021] GET /static/img/arrow.jpg => generated 847 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 855|app: 0|req: 5/8] 172.17.0.1 () {56 vars in 2719 bytes} [Mon May 17 13:00:19 2021] POST /mlic/submit/ => generated 0 bytes in 30 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 855|app: 0|req: 6/9] 172.17.0.1 () {50 vars in 2594 bytes} [Mon May 17 13:00:19 2021] GET /mlic/result/92 => generated 3600 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 855|app: -1|req: -1/10] 172.17.0.1 () {44 vars in 2439 bytes} [Mon May 17 13:00:19 2021] GET /static/img/honey.jpg => generated 226682 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 3 headers in 115 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/11] 172.17.0.1 () {44 vars in 2420 bytes} [Mon May 17 13:00:19 2021] GET /static/css/result.css => generated 4465 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/12] 172.17.0.1 () {44 vars in 2401 bytes} [Mon May 17 13:00:19 2021] GET /static/js/result.js => generated 2950 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 855|app: 0|req: 7/13] 172.17.0.1 () {52 vars in 2640 bytes} [Mon May 17 13:31:02 2021] GET /mlic/result/92 => generated 3919 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 855|app: -1|req: -1/14] 172.17.0.1 () {48 vars in 2495 bytes} [Mon May 17 13:31:02 2021] GET /static/css/reset.css => generated 990 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/15] 172.17.0.1 () {48 vars in 2497 bytes} [Mon May 17 13:31:02 2021] GET /static/css/result.css => generated 5479 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/16] 172.17.0.1 () {48 vars in 2478 bytes} [Mon May 17 13:31:02 2021] GET /static/js/result.js => generated 3629 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/17] 172.17.0.1 () {48 vars in 2516 bytes} [Mon May 17 13:31:02 2021] GET /static/img/honey.jpg => generated 226682 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 115 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 855|app: 0|req: 8/18] 172.17.0.1 () {48 vars in 2498 bytes} [Mon May 17 13:31:03 2021] GET /favicon.ico => generated 2234 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 855|app: 0|req: 9/19] 172.17.0.1 () {50 vars in 2594 bytes} [Mon May 17 13:32:05 2021] GET /mlic/result/92 => generated 3867 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 855|app: -1|req: -1/20] 172.17.0.1 () {46 vars in 2456 bytes} [Mon May 17 13:32:05 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/21] 172.17.0.1 () {46 vars in 2475 bytes} [Mon May 17 13:32:05 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 855|app: 0|req: 10/22] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:32:29 2021] GET /mlic/result/92 => generated 3867 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 855|app: -1|req: -1/23] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 13:32:29 2021] GET /static/js/result.js => generated 3340 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 855|app: -1|req: -1/24] 172.17.0.1 () {46 vars in 2476 bytes} [Mon May 17 13:32:29 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Internal Server Error: /mlic/result/92
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 231, in result
+    return render(request, 'main/result.html', context=context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'feedback' not found. 'feedback' is not a valid view function or pattern name.
+[pid: 855|app: 0|req: 11/25] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:39:40 2021] GET /mlic/result/92 => generated 168908 bytes in 395 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 856)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:40:10 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37585 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x56420f3d76a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x56420f3d76a0 pid: 2748 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2748)
+spawned uWSGI worker 1 (pid: 2751, cores: 1)
+spawned uWSGI http 1 (pid: 2752)
+subprocess 2749 exited with code 0
+[pid: 2751|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:40:13 2021] GET /mlic/result/92 => generated 4229 bytes in 395 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2751|app: -1|req: -1/2] 172.17.0.1 () {46 vars in 2476 bytes} [Mon May 17 13:40:13 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2751|app: -1|req: -1/3] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 13:40:13 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2751|app: 0|req: 2/4] 172.17.0.1 () {50 vars in 2594 bytes} [Mon May 17 13:41:01 2021] GET /mlic/result/92 => generated 4261 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2751|app: -1|req: -1/5] 172.17.0.1 () {46 vars in 2456 bytes} [Mon May 17 13:41:01 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2751|app: 0|req: 3/6] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:47:55 2021] GET /mlic/result/92 => generated 4285 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2751|app: -1|req: -1/7] 172.17.0.1 () {46 vars in 2476 bytes} [Mon May 17 13:47:55 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2751|app: -1|req: -1/8] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 13:47:55 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Forbidden (CSRF token missing or incorrect.): /mlic/feedback/
+[pid: 2751|app: 0|req: 4/9] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:47:59 2021] POST /mlic/feedback/ => generated 2519 bytes in 5 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+Forbidden (CSRF token missing or incorrect.): /mlic/feedback/
+[pid: 2751|app: 0|req: 5/10] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:48:15 2021] POST /mlic/feedback/ => generated 2519 bytes in 4 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 2751|app: 0|req: 6/11] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:48:17 2021] GET /mlic/result/92 => generated 4439 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 246, in feedback
+    return redirect('main:result')
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'result' with no arguments not found. 1 pattern(s) tried: ['mlic/result/(?P<result_id>[0-9]+)$']
+[pid: 2751|app: 0|req: 7/12] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:48:19 2021] POST /mlic/feedback/ => generated 81448 bytes in 119 msecs (HTTP/1.1 500) 6 headers in 186 bytes (2 switches on core 0)
+[pid: 2751|app: 0|req: 8/13] 172.17.0.1 () {50 vars in 2593 bytes} [Mon May 17 13:51:25 2021] GET /mlic/result/92 => generated 4439 bytes in 105 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 2751|app: -1|req: -1/14] 172.17.0.1 () {46 vars in 2475 bytes} [Mon May 17 13:51:25 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2751|app: -1|req: -1/15] 172.17.0.1 () {46 vars in 2456 bytes} [Mon May 17 13:51:25 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 246, in feedback
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'result' with no arguments not found. 1 pattern(s) tried: ['mlic/result/(?P<result_id>[0-9]+)$']
+[pid: 2751|app: 0|req: 9/16] 172.17.0.1 () {56 vars in 2728 bytes} [Mon May 17 13:51:27 2021] POST /mlic/feedback/ => generated 79943 bytes in 57 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2752)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:51:35 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35777 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x556039cce6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556039cce6a0 pid: 2856 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2856)
+spawned uWSGI worker 1 (pid: 2859, cores: 1)
+spawned uWSGI http 1 (pid: 2860)
+subprocess 2857 exited with code 0
+[pid: 2859|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:51:38 2021] GET /mlic/result/92 => generated 4439 bytes in 144 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 236, in feedback
+    content = int(request.POST[f'feedback_content'])
+ValueError: invalid literal for int() with base 10: '피드백을 입력해주세요.'
+[pid: 2859|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:51:41 2021] POST /mlic/feedback/ => generated 60669 bytes in 104 msecs (HTTP/1.1 500) 6 headers in 186 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2860)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:52:07 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42572 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x5571412316a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5571412316a0 pid: 2881 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2881)
+spawned uWSGI worker 1 (pid: 2884, cores: 1)
+spawned uWSGI http 1 (pid: 2885)
+subprocess 2882 exited with code 0
+[pid: 2884|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:52:09 2021] GET /mlic/result/92 => generated 4439 bytes in 63 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 242, in feedback
+    return render('main:result')
+TypeError: render() missing 1 required positional argument: 'template_name'
+[pid: 2884|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:52:11 2021] POST /mlic/feedback/ => generated 60423 bytes in 180 msecs (HTTP/1.1 500) 6 headers in 186 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2885)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:52:56 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36488 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x5581d65e76a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5581d65e76a0 pid: 2909 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2909)
+spawned uWSGI worker 1 (pid: 2912, cores: 1)
+spawned uWSGI http 1 (pid: 2913)
+subprocess 2910 exited with code 0
+[pid: 2912|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:52:58 2021] GET /mlic/result/92 => generated 4439 bytes in 274 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 2912|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:53:00 2021] POST /mlic/feedback/ => generated 3197 bytes in 61 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 2912|app: -1|req: -1/3] 172.17.0.1 () {44 vars in 2419 bytes} [Mon May 17 13:53:00 2021] GET /static/css/form1.css => generated 1930 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 2912|app: -1|req: -1/4] 172.17.0.1 () {44 vars in 2398 bytes} [Mon May 17 13:53:00 2021] GET /static/js/form.js => generated 1512 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 2912|app: -1|req: -1/5] 172.17.0.1 () {44 vars in 2446 bytes} [Mon May 17 13:53:00 2021] GET /static/img/arrow.jpg => generated 847 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 2912|app: 0|req: 3/6] 172.17.0.1 () {46 vars in 2526 bytes} [Mon May 17 13:53:11 2021] GET /mlic/form/ => generated 34682 bytes in 193 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 2912|app: 0|req: 4/7] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 13:53:16 2021] GET /mlic/result/92 => generated 4439 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 2912|app: -1|req: -1/8] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 13:53:16 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2912|app: 0|req: 5/9] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:53:18 2021] POST /mlic/feedback/ => generated 3197 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2913)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:53:28 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34084 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x56136550a6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56136550a6a0 pid: 2932 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2932)
+spawned uWSGI worker 1 (pid: 2935, cores: 1)
+spawned uWSGI http 1 (pid: 2936)
+subprocess 2933 exited with code 0
+[pid: 2935|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2618 bytes} [Mon May 17 13:53:30 2021] GET /mlic/result/92 => generated 4439 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 2935|app: -1|req: -1/2] 172.17.0.1 () {46 vars in 2499 bytes} [Mon May 17 13:53:30 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 2935|app: 0|req: 2/3] 172.17.0.1 () {56 vars in 2752 bytes} [Mon May 17 13:53:32 2021] POST /mlic/feedback/ => generated 4362 bytes in 37 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2936)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 13:59:08 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36674 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x555d47daf6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555d47daf6a0 pid: 2963 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2963)
+spawned uWSGI worker 1 (pid: 2966, cores: 1)
+spawned uWSGI http 1 (pid: 2967)
+subprocess 2964 exited with code 0
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view main.views.feedback didn't return an HttpResponse object. It returned None instead.
+[pid: 2966|app: 0|req: 1/1] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 13:59:11 2021] POST /mlic/feedback/ => generated 61958 bytes in 187 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2967)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:12:59 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36634 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x55c74fd846a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c74fd846a0 pid: 3073 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3073)
+spawned uWSGI worker 1 (pid: 3076, cores: 1)
+spawned uWSGI http 1 (pid: 3077)
+subprocess 3074 exited with code 0
+[pid: 3076|app: 0|req: 1/1] 172.17.0.1 () {48 vars in 2564 bytes} [Mon May 17 14:13:03 2021] GET /mlic/result/92 => generated 4600 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3076|app: 0|req: 2/2] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 14:13:05 2021] GET /mlic/result/92 => generated 4600 bytes in 37 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3076|app: -1|req: -1/3] 172.17.0.1 () {46 vars in 2476 bytes} [Mon May 17 14:13:05 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 3076|app: -1|req: -1/4] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 14:13:05 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: feedback() missing 1 required positional argument: 'result_id'
+[pid: 3076|app: 0|req: 3/5] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 14:13:09 2021] POST /mlic/feedback/ => generated 57414 bytes in 96 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3077)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:13:34 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43242 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x564a62cd36a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564a62cd36a0 pid: 3095 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3095)
+spawned uWSGI worker 1 (pid: 3098, cores: 1)
+spawned uWSGI http 1 (pid: 3099)
+subprocess 3096 exited with code 0
+[pid: 3098|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2594 bytes} [Mon May 17 14:13:37 2021] GET /mlic/result/92 => generated 4600 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3098|app: 0|req: 2/2] 172.17.0.1 () {50 vars in 2594 bytes} [Mon May 17 14:13:38 2021] GET /mlic/result/92 => generated 4600 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 244, in feedback
+    url = "main/result.html" + result_id
+TypeError: can only concatenate str (not "int") to str
+[pid: 3098|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 2728 bytes} [Mon May 17 14:13:40 2021] POST /mlic/feedback/ => generated 60853 bytes in 132 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3099)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:14:13 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34820 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x5597986b76a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5597986b76a0 pid: 3119 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3119)
+spawned uWSGI worker 1 (pid: 3122, cores: 1)
+spawned uWSGI http 1 (pid: 3123)
+subprocess 3120 exited with code 0
+[pid: 3122|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 14:14:15 2021] GET /mlic/result/92 => generated 4600 bytes in 134 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 246, in feedback
+    return render(request, url,)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/result.html92
+[pid: 3122|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 14:14:16 2021] POST /mlic/feedback/ => generated 75647 bytes in 105 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3123)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:14:40 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35816 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x55f82667b6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f82667b6a0 pid: 3140 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3140)
+spawned uWSGI worker 1 (pid: 3143, cores: 1)
+spawned uWSGI http 1 (pid: 3144)
+subprocess 3141 exited with code 0
+[pid: 3143|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 14:14:42 2021] GET /mlic/result/92 => generated 4600 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3143|app: 0|req: 2/2] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 14:14:44 2021] GET /mlic/result/92 => generated 4600 bytes in 26 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Internal Server Error: /mlic/feedback/
+Traceback (most recent call last):
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 246, in feedback
+    return render(request, url,)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loaders/base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "/workspace/SugarContentCheck/venv/lib/python3.7/site-packages/django/template/loaders/filesystem.py", line 23, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+NotADirectoryError: [Errno 20] Not a directory: '/workspace/SugarContentCheck/main/templates/main/result.html/92'
+[pid: 3143|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 14:14:46 2021] POST /mlic/feedback/ => generated 95471 bytes in 120 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3144)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:19:21 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34365 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x560271ac76a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560271ac76a0 pid: 3183 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3183)
+spawned uWSGI worker 1 (pid: 3186, cores: 1)
+spawned uWSGI http 1 (pid: 3187)
+subprocess 3184 exited with code 0
+[pid: 3186|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2595 bytes} [Mon May 17 14:19:22 2021] GET /mlic/result/92 => generated 4600 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3186|app: -1|req: -1/2] 172.17.0.1 () {46 vars in 2457 bytes} [Mon May 17 14:19:22 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/3] 172.17.0.1 () {46 vars in 2476 bytes} [Mon May 17 14:19:22 2021] GET /static/css/result.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 3186|app: 0|req: 2/4] 172.17.0.1 () {56 vars in 2729 bytes} [Mon May 17 14:19:25 2021] POST /mlic/feedback/ => generated 0 bytes in 33 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 3/5] 172.17.0.1 () {50 vars in 2599 bytes} [Mon May 17 14:19:25 2021] GET /mlic/result/92 => generated 4600 bytes in 21 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+Not Found: /mlic/admin
+[pid: 3186|app: 0|req: 4/6] 172.17.0.1 () {46 vars in 2478 bytes} [Mon May 17 14:19:37 2021] GET /mlic/admin => generated 3009 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 5/7] 172.17.0.1 () {46 vars in 2468 bytes} [Mon May 17 14:19:41 2021] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 6/8] 172.17.0.1 () {46 vars in 2470 bytes} [Mon May 17 14:19:41 2021] GET /admin/ => generated 0 bytes in 33 msecs (HTTP/1.1 302) 9 headers in 331 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 7/9] 172.17.0.1 () {46 vars in 2507 bytes} [Mon May 17 14:19:41 2021] GET /admin/login/?next=/admin/ => generated 2214 bytes in 51 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3186|app: -1|req: -1/10] 172.17.0.1 () {44 vars in 2435 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/js/nav_sidebar.js => generated 1360 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/11] 172.17.0.1 () {44 vars in 2454 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/css/nav_sidebar.css => generated 2271 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/12] 172.17.0.1 () {44 vars in 2440 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/css/base.css => generated 19513 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/13] 172.17.0.1 () {44 vars in 2452 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/css/responsive.css => generated 18545 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/14] 172.17.0.1 () {44 vars in 2442 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/css/login.css => generated 939 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/15] 172.17.0.1 () {44 vars in 2442 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/css/fonts.css => generated 423 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/16] 172.17.0.1 () {46 vars in 2524 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/17] 172.17.0.1 () {46 vars in 2520 bytes} [Mon May 17 14:19:42 2021] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3186|app: 0|req: 8/18] 172.17.0.1 () {56 vars in 2759 bytes} [Mon May 17 14:19:48 2021] POST /admin/login/?next=/admin/ => generated 2375 bytes in 153 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3186|app: -1|req: -1/19] 172.17.0.1 () {46 vars in 2517 bytes} [Mon May 17 14:19:48 2021] GET /static/admin/fonts/Roboto-Bold-webfont.woff => generated 86184 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3186|app: 0|req: 9/20] 172.17.0.1 () {56 vars in 2760 bytes} [Mon May 17 14:19:55 2021] POST /admin/login/?next=/admin/ => generated 0 bytes in 312 msecs (HTTP/1.1 302) 11 headers in 625 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 10/21] 172.17.0.1 () {50 vars in 2637 bytes} [Mon May 17 14:19:55 2021] GET /admin/ => generated 7875 bytes in 51 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3186|app: -1|req: -1/22] 172.17.0.1 () {44 vars in 2474 bytes} [Mon May 17 14:19:55 2021] GET /static/admin/css/dashboard.css => generated 380 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 110 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/23] 172.17.0.1 () {44 vars in 2520 bytes} [Mon May 17 14:19:55 2021] GET /static/admin/img/icon-addlink.svg => generated 331 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 115 bytes (0 switches on core 0)
+[pid: 3186|app: -1|req: -1/24] 172.17.0.1 () {44 vars in 2526 bytes} [Mon May 17 14:19:55 2021] GET /static/admin/img/icon-changelink.svg => generated 380 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 115 bytes (0 switches on core 0)
+[pid: 3186|app: 0|req: 11/25] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:20:00 2021] GET /admin/ => generated 7875 bytes in 66 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+Forbidden (CSRF token missing or incorrect.): /mlic/feedback/
+[pid: 3186|app: 0|req: 12/26] 172.17.0.1 () {56 vars in 2773 bytes} [Mon May 17 14:20:30 2021] POST /mlic/feedback/ => generated 2519 bytes in 4 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 13/27] 172.17.0.1 () {46 vars in 2587 bytes} [Mon May 17 14:20:37 2021] GET /mlic/result/92 => generated 4600 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 14/28] 172.17.0.1 () {50 vars in 2643 bytes} [Mon May 17 14:20:38 2021] GET /mlic/result/92 => generated 4600 bytes in 19 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 15/29] 172.17.0.1 () {56 vars in 2773 bytes} [Mon May 17 14:20:40 2021] POST /mlic/feedback/ => generated 0 bytes in 84 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 16/30] 172.17.0.1 () {50 vars in 2643 bytes} [Mon May 17 14:20:40 2021] GET /mlic/result/92 => generated 4600 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 17/31] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:21:33 2021] GET /admin/ => generated 7875 bytes in 35 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 18/32] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:21:33 2021] GET /admin/ => generated 7875 bytes in 62 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 19/33] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:21:33 2021] GET /admin/ => generated 7875 bytes in 49 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 20/34] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:22:10 2021] GET /admin/ => generated 7875 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3186|app: 0|req: 21/35] 172.17.0.1 () {50 vars in 2638 bytes} [Mon May 17 14:22:11 2021] GET /admin/ => generated 7875 bytes in 85 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3187)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon May 17 14:22:16 2021] ***
+compiled with version: 7.5.0 on 14 May 2021 13:14:02
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /workspace/SugarContentCheck
+writing pidfile to /workspace/SugarContentCheck/tmp/scc.pid
+detected binary path: /workspace/SugarContentCheck/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/SugarContentCheck/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37755 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/SugarContentCheck/venv/
+Set PythonHome to /workspace/SugarContentCheck/venv/
+Python main interpreter initialized at 0x55cd2855e6a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55cd2855e6a0 pid: 3231 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3231)
+spawned uWSGI worker 1 (pid: 3234, cores: 1)
+spawned uWSGI http 1 (pid: 3235)
+subprocess 3232 exited with code 0
+[pid: 3234|app: 0|req: 1/1] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:20 2021] GET /mlic/result/92 => generated 4600 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 2/2] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:21 2021] GET /mlic/result/92 => generated 4600 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 2796 bytes} [Mon May 17 14:22:22 2021] POST /mlic/feedback/ => generated 0 bytes in 26 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 4/4] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:23 2021] GET /mlic/result/92 => generated 4600 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 5/5] 172.17.0.1 () {50 vars in 2661 bytes} [Mon May 17 14:22:28 2021] GET /admin/ => generated 8299 bytes in 109 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 6/6] 172.17.0.1 () {48 vars in 2639 bytes} [Mon May 17 14:22:30 2021] GET /admin/main/feedback/ => generated 9309 bytes in 101 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3234|app: -1|req: -1/7] 172.17.0.1 () {44 vars in 2497 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/jquery.init.js => generated 347 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 124 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/8] 172.17.0.1 () {44 vars in 2483 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/core.js => generated 5698 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/9] 172.17.0.1 () {44 vars in 2527 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 5984 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/10] 172.17.0.1 () {44 vars in 2516 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/css/changelists.css => generated 6874 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3234|app: 0|req: 7/11] 172.17.0.1 () {44 vars in 2463 bytes} [Mon May 17 14:22:30 2021] GET /admin/jsi18n/ => generated 3195 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3234|app: -1|req: -1/12] 172.17.0.1 () {44 vars in 2515 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/vendor/jquery/jquery.js => generated 287630 bytes in 7 msecs via sendfile() (HTTP/1.1 200) 3 headers in 127 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/13] 172.17.0.1 () {44 vars in 2519 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/vendor/xregexp/xregexp.js => generated 232381 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 3 headers in 127 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/14] 172.17.0.1 () {44 vars in 2489 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/actions.js => generated 7664 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/15] 172.17.0.1 () {44 vars in 2487 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/urlify.js => generated 7902 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/16] 172.17.0.1 () {44 vars in 2497 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/js/prepopulate.js => generated 1531 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/17] 172.17.0.1 () {44 vars in 2542 bytes} [Mon May 17 14:22:30 2021] GET /static/admin/img/tooltag-add.svg => generated 331 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 115 bytes (0 switches on core 0)
+[pid: 3234|app: 0|req: 8/18] 172.17.0.1 () {56 vars in 2796 bytes} [Mon May 17 14:22:43 2021] POST /mlic/feedback/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 9/19] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:43 2021] GET /mlic/result/92 => generated 4600 bytes in 50 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 10/20] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:46 2021] GET /mlic/result/92 => generated 4600 bytes in 75 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 11/21] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:47 2021] GET /mlic/result/92 => generated 4600 bytes in 42 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 12/22] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:47 2021] GET /mlic/result/92 => generated 4600 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 13/23] 172.17.0.1 () {50 vars in 2664 bytes} [Mon May 17 14:22:48 2021] GET /mlic/result/92 => generated 4600 bytes in 21 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 14/24] 172.17.0.1 () {50 vars in 2665 bytes} [Mon May 17 14:22:48 2021] GET /mlic/result/92 => generated 4600 bytes in 32 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 15/25] 172.17.0.1 () {50 vars in 2669 bytes} [Mon May 17 14:22:50 2021] GET /admin/main/feedback/ => generated 9512 bytes in 167 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 16/26] 172.17.0.1 () {44 vars in 2462 bytes} [Mon May 17 14:22:50 2021] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 17/27] 172.17.0.1 () {50 vars in 2669 bytes} [Mon May 17 14:22:51 2021] GET /admin/main/feedback/ => generated 9512 bytes in 263 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 18/28] 172.17.0.1 () {44 vars in 2462 bytes} [Mon May 17 14:22:52 2021] GET /admin/jsi18n/ => generated 3195 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 19/29] 172.17.0.1 () {50 vars in 2669 bytes} [Mon May 17 14:22:52 2021] GET /admin/main/feedback/ => generated 9512 bytes in 103 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 20/30] 172.17.0.1 () {44 vars in 2462 bytes} [Mon May 17 14:22:52 2021] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 21/31] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:53 2021] GET /mlic/result/92 => generated 4600 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 22/32] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:54 2021] GET /mlic/result/92 => generated 4600 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 23/33] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:22:54 2021] GET /mlic/result/92 => generated 4600 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 24/34] 172.17.0.1 () {56 vars in 2796 bytes} [Mon May 17 14:23:00 2021] POST /mlic/feedback/ => generated 0 bytes in 64 msecs (HTTP/1.1 302) 6 headers in 194 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 25/35] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:00 2021] GET /mlic/result/92 => generated 4600 bytes in 22 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 26/36] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:02 2021] GET /mlic/result/92 => generated 4600 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 27/37] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:03 2021] GET /mlic/result/92 => generated 4600 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 28/38] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:03 2021] GET /mlic/result/92 => generated 4600 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 29/39] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:03 2021] GET /mlic/result/92 => generated 4600 bytes in 26 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 30/40] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:03 2021] GET /mlic/result/92 => generated 4600 bytes in 19 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 31/41] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:03 2021] GET /mlic/result/92 => generated 4600 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 32/42] 172.17.0.1 () {50 vars in 2666 bytes} [Mon May 17 14:23:04 2021] GET /mlic/result/92 => generated 4600 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 33/43] 172.17.0.1 () {50 vars in 2670 bytes} [Mon May 17 14:23:04 2021] GET /admin/main/feedback/ => generated 9715 bytes in 97 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 34/44] 172.17.0.1 () {44 vars in 2463 bytes} [Mon May 17 14:23:05 2021] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3234|app: 0|req: 35/45] 172.17.0.1 () {50 vars in 2689 bytes} [Mon May 17 14:24:16 2021] GET /mlic/result/92 => generated 4600 bytes in 40 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 3234|app: -1|req: -1/46] 172.17.0.1 () {46 vars in 2566 bytes} [Mon May 17 14:24:16 2021] GET /static/css/result.css => generated 5517 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3234|app: -1|req: -1/47] 172.17.0.1 () {46 vars in 2547 bytes} [Mon May 17 14:24:16 2021] GET /static/js/result.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)

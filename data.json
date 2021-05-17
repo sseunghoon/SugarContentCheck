@@ -1,17 +1,973 @@
 [
 {
+    "model": "main.result",
+    "pk": 1,
+    "fields": {
+        "intensity_sum": 30,
+        "serial_num": 20,
+        "belong": 0
+    }
+},
+{
+    "model": "main.result",
+    "pk": 2,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 3,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 4,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 5,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 6,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 7,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 8,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 9,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 10,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 11,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 12,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 13,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 14,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 15,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 16,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 17,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 18,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 19,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 20,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 21,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 22,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 23,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 24,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 25,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 26,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 27,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 28,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 29,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 30,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 31,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 32,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 33,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 34,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 35,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 36,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 37,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 38,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 39,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 40,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 41,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 42,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 43,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 44,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 45,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 46,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 47,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 48,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 49,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 50,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 51,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 52,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 53,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 54,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 55,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 56,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 57,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 58,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 59,
+    "fields": {
+        "intensity_sum": 8,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 60,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 61,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 62,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 63,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 64,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 65,
+    "fields": {
+        "intensity_sum": 5,
+        "serial_num": 16,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 66,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 67,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 68,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 69,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 70,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 71,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 72,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 73,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 74,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 75,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 76,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 77,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 78,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 79,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 80,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 81,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 82,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 19,
+        "belong": 3
+    }
+},
+{
+    "model": "main.result",
+    "pk": 83,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 84,
+    "fields": {
+        "intensity_sum": 26,
+        "serial_num": 16,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 85,
+    "fields": {
+        "intensity_sum": 10,
+        "serial_num": 16,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 86,
+    "fields": {
+        "intensity_sum": 18,
+        "serial_num": 20,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 87,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 88,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 20,
+        "belong": 2
+    }
+},
+{
+    "model": "main.result",
+    "pk": 89,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 90,
+    "fields": {
+        "intensity_sum": 37,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 91,
+    "fields": {
+        "intensity_sum": 271,
+        "serial_num": 20,
+        "belong": 1
+    }
+},
+{
+    "model": "main.result",
+    "pk": 92,
+    "fields": {
+        "intensity_sum": 290,
+        "serial_num": 21,
+        "belong": 1
+    }
+},
+{
     "model": "main.question",
     "pk": 1,
     "fields": {
         "number": 1,
-        "content": "잠자리?"
+        "content": "무슨 전화기를 사용하셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "content": "부대 입영 / 휴가 복귀 수단은 무엇이었나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "content": "PX의 형태는 어떤 것이었나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 4,
+    "fields": {
+        "number": 4,
+        "content": "군생활 동안에 사귀던 여자친구와 헤어졌나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 5,
+    "fields": {
+        "number": 5,
+        "content": "군생활 도중 북한의 도발이 있었나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 6,
+    "fields": {
+        "number": 6,
+        "content": "특수 목적을 가진 부대였나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 7,
+    "fields": {
+        "number": 7,
+        "content": "부대 내 구타가 있었나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 8,
+    "fields": {
+        "number": 8,
+        "content": "평균적인 휴가 일수는 며칠인가요?(답변은 연가 24일 기준)"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 9,
+    "fields": {
+        "number": 9,
+        "content": "제일 힘든 훈련은 무엇이었나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 10,
+    "fields": {
+        "number": 10,
+        "content": "선후임간의 기수차이는 어떠셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 11,
+    "fields": {
+        "number": 11,
+        "content": "경계근무 간 실탄을 착탄(보유)하셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 12,
+    "fields": {
+        "number": 12,
+        "content": "군생활을 하는 동안 행군을 얼마나 하셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 13,
+    "fields": {
+        "number": 13,
+        "content": "외출/외박 위수지역의 수준은 어땠나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 14,
+    "fields": {
+        "number": 14,
+        "content": "복무 기간이 어떻게 되시나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 15,
+    "fields": {
+        "number": 15,
+        "content": "정해진 기간만 채우면 자동 진급이 되셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 16,
+    "fields": {
+        "number": 16,
+        "content": "훈련을 얼마나 하셨나요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 17,
+    "fields": {
+        "number": 17,
+        "content": "탈영/자살을 시도하거나 영창(혹은 군기교육대)를 간 적이 있나요?"
     }
 },
 {
     "model": "main.choice",
     "pk": 1,
     "fields": {
-        "content": "침대",
+        "content": "공중전화",
         "intensity": 0,
         "question": 1
     }
@@ -20,9 +976,592 @@
     "model": "main.choice",
     "pk": 2,
     "fields": {
-        "content": "침상",
+        "content": "생활관 폰",
         "intensity": 8,
         "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 3,
+    "fields": {
+        "content": "스마트폰",
+        "intensity": 0,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 4,
+    "fields": {
+        "content": "배-섬",
+        "intensity": 5,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 5,
+    "fields": {
+        "content": "버스,도보-도심 주변",
+        "intensity": 2,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 6,
+    "fields": {
+        "content": "택시,부대차량-산골",
+        "intensity": 5,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 7,
+    "fields": {
+        "content": "부대 내 PX",
+        "intensity": 3,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 8,
+    "fields": {
+        "content": "황금 마차",
+        "intensity": 19,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 9,
+    "fields": {
+        "content": "...나쁜 year",
+        "intensity": 19,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 10,
+    "fields": {
+        "content": "꽃 신 신겨줬음",
+        "intensity": 19,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 11,
+    "fields": {
+        "content": "먼저 있었냐고 물어봐야 되는 거 아님???",
+        "intensity": 19,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 12,
+    "fields": {
+        "content": "다행히도 없었음",
+        "intensity": 19,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 13,
+    "fields": {
+        "content": "전쟁 발발을 대비한 출동(사격)대기",
+        "intensity": 19,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 14,
+    "fields": {
+        "content": "실제 대응사격 등 전투경험",
+        "intensity": 19,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 15,
+    "fields": {
+        "content": "강철부대 출연 부대(특전사, UDT,SDT,SSU, 707, 해병대수색대)",
+        "intensity": 19,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 16,
+    "fields": {
+        "content": "특수부대",
+        "intensity": 19,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 17,
+    "fields": {
+        "content": "메이커 부대",
+        "intensity": 19,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 18,
+    "fields": {
+        "content": "그냥 부대",
+        "intensity": 19,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 19,
+    "fields": {
+        "content": "구타 없었음",
+        "intensity": 19,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 20,
+    "fields": {
+        "content": "일상적인 구타",
+        "intensity": 19,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 21,
+    "fields": {
+        "content": "가끔가다 한 번쯤 나옴",
+        "intensity": 19,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 22,
+    "fields": {
+        "content": "50일 이하, 휴가에 아주아주 짠 편",
+        "intensity": 19,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 23,
+    "fields": {
+        "content": "51~60일, 휴가에 조금 짠 편",
+        "intensity": 19,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 24,
+    "fields": {
+        "content": "61~70일, 꽤 괜찮을지도?",
+        "intensity": 19,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 25,
+    "fields": {
+        "content": "71~80일, 휴가 하나는 잘 주네.",
+        "intensity": 19,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 26,
+    "fields": {
+        "content": "81일~, 휴가 하나 만큼은 달다 달아.",
+        "intensity": 19,
+        "question": 8
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 27,
+    "fields": {
+        "content": "유격 및 혹한기",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 28,
+    "fields": {
+        "content": "KCTC(육군과학화전투훈련)",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 29,
+    "fields": {
+        "content": "군 전투지휘검열",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 30,
+    "fields": {
+        "content": "호국 훈련",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 31,
+    "fields": {
+        "content": "공중 지상 합동훈련",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 32,
+    "fields": {
+        "content": "특수 훈련(부대 맞춤)",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 33,
+    "fields": {
+        "content": "해당사항 없음",
+        "intensity": 19,
+        "question": 9
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 34,
+    "fields": {
+        "content": "꼬인 기수(선임은 가깝고 많은데 후임은 멀고 적음)",
+        "intensity": 19,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 35,
+    "fields": {
+        "content": "풀린 기수(선임은 멀고 적은데 후임은 가깝고 많음)",
+        "intensity": 19,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 36,
+    "fields": {
+        "content": "평범했음",
+        "intensity": 19,
+        "question": 10
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 37,
+    "fields": {
+        "content": "실탄 보유(착탄)",
+        "intensity": 19,
+        "question": 11
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 38,
+    "fields": {
+        "content": "공포탄, 혹은 빈 탄창",
+        "intensity": 19,
+        "question": 11
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 39,
+    "fields": {
+        "content": "0km",
+        "intensity": 19,
+        "question": 12
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 40,
+    "fields": {
+        "content": "30km이하",
+        "intensity": 19,
+        "question": 12
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 41,
+    "fields": {
+        "content": "60km이하",
+        "intensity": 19,
+        "question": 12
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 42,
+    "fields": {
+        "content": "90km이하",
+        "intensity": 19,
+        "question": 12
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 43,
+    "fields": {
+        "content": "90km초과",
+        "intensity": 19,
+        "question": 12
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 44,
+    "fields": {
+        "content": "시골, 펜션을 잡아야함",
+        "intensity": 19,
+        "question": 13
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 45,
+    "fields": {
+        "content": "소도시, 그래도 꽤 놀만함",
+        "intensity": 19,
+        "question": 13
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 46,
+    "fields": {
+        "content": "대도시, 없는게 없음",
+        "intensity": 19,
+        "question": 13
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 47,
+    "fields": {
+        "content": "24개월 이상",
+        "intensity": 19,
+        "question": 14
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 48,
+    "fields": {
+        "content": "21개월 이상",
+        "intensity": 19,
+        "question": 14
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 49,
+    "fields": {
+        "content": "18개월 이상",
+        "intensity": 19,
+        "question": 14
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 50,
+    "fields": {
+        "content": "체력 등 상관없이 자동진급",
+        "intensity": 19,
+        "question": 15
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 51,
+    "fields": {
+        "content": "어림도 없지, 기준 미달 시 얄짤 없이 진급 누락",
+        "intensity": 19,
+        "question": 15
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 52,
+    "fields": {
+        "content": "1달에 1번 이상, 없는 훈련도 만들어서",
+        "intensity": 19,
+        "question": 16
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 53,
+    "fields": {
+        "content": "2달에 1번, 쉴만 하면 하는",
+        "intensity": 19,
+        "question": 16
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 54,
+    "fields": {
+        "content": "3달에 1번, 잊을만 하면 돌아오는",
+        "intensity": 19,
+        "question": 16
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 55,
+    "fields": {
+        "content": "큼지막한 훈련만 하고 딱히..?",
+        "intensity": 19,
+        "question": 16
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 56,
+    "fields": {
+        "content": "그게, 나야",
+        "intensity": 19,
+        "question": 17
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 57,
+    "fields": {
+        "content": "생각이 든 적은 있었다.",
+        "intensity": 19,
+        "question": 17
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 58,
+    "fields": {
+        "content": "같은 중대에 그런 사람이 있었음",
+        "intensity": 19,
+        "question": 17
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 59,
+    "fields": {
+        "content": "큰 사건/사고 없는 클린한 부대",
+        "intensity": 19,
+        "question": 17
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 1,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 2,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 3,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 4,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 5,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 6,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 7,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 8,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 9,
+    "fields": {
+        "content": "피드백을 입력해주세요."
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 10,
+    "fields": {
+        "content": "피드백을 입력해주세요."
     }
 }
 ]
