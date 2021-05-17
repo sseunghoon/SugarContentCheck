@@ -73,10 +73,10 @@
                         <div class="wrapper">
                             <form id="form" action="{% url 'main:feedback' %}" method='post'>
                                 {% csrf_token %}
-                                <textarea name="feedback_content" cols="50" rows="10" 
-               placeholder="default">피드백을 입력해주세요.</textarea>
+                                <h2 class="feedbackTitle">메세지 / 피드백</h2>
+                                <textarea class="feedback_content" name="feedback_content" cols="20" rows="10" maxlength="500" placeholder="감사합니다."></textarea>
                                 <input type="text" class="input_resultId" name="result_id" value="{{result_id}}"/>
-                                <input type="submit" value="전 송" class="submit_btn"/>
+                                <input class="submin_btn" type="submit" value="전 송" class="submit_btn"/>
                             </form>
                         </div>
                     </section>
@@ -98,7 +98,7 @@
                     <button class="intention" type="button">기획 의도</button>
                 </div>
                 <div>
-                    <button id="myBtn" class="feedback" type="button">피&nbsp;드&nbsp;백</button>
+                    <button id="myBtn" class="feedback" type="button">제작자에게 메세지 / Feedback</button>
                 </div>
             </div>
         </div>

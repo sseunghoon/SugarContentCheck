@@ -319,3 +319,28 @@ button:hover {
 .input_resultId{
     display:none;
 }
+
+.feedback_content{
+    resize:none;
+    font-size:20px;
+    font-family: 'NEXON Lv1 Gothic OTF';
+    width: 80%;
+}
+
+.feedbackTitle{
+    font-size:20px;
+    font-family: 'NEXON Lv1 Gothic OTF';
+    padding-bottom:5px;
+}
+
+.submin_btn {
+    display: block;
+    background-color: #807182;
+    border: 5px solid transparent;
+    border-radius:5px;
+    color: #fff;
+}
+
+.submin_btn:hover {
+    background: #171A2B;
+}
