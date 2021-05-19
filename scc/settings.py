@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-h(!ab4a)^h7g)(
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 
@@ -96,9 +96,8 @@ DATABASES = {
         'NAME': 'waby',
         'USER': 'waby',
         'PASSWORD': 'betterthanyesterday',
-        # 'HOST': '127.0.0.1',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '0.0.0.0',
+        'PORT': '5432',
     }
 }
 
