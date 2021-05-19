@@ -1,5 +1,7 @@
 const copyBtn = document.querySelector('.copy_btn');
 const facebookShare = document.querySelector('.facebook_share');
+const intention = document.querySelector('.intention');
+const feedback = document.querySelector('.feedback');
 
 const kakaoShare = document.querySelector('.kakao_share');
 Kakao.init('1f7a70ed2e9d63f3495e5f7206857c98');
@@ -15,8 +17,8 @@ function sendLink(){
             description:'내 군생활 강도는?',
             imageUrl:'https://mbit.weniv.co.kr/static/img/mbit_thumbnail.png',
             link:{
-                mobileWebUrl:'https://mbit.weniv.co.kr',
-                webUrl:'https://mbit.weniv.co.kr',
+                mobileWebUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
+                webUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
             },
         },
         social:{
@@ -35,8 +37,8 @@ function sendLink(){
         {
             title:'테스트 하러가기',
             link:{
-                webUrl:'https://mbit.weniv.co.kr',
-                mobileWebUrl:'https://mbit.weniv.co.kr',
+                webUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
+                mobileWebUrl:'https://sugarcontentcheck-tubcs.run.goorm.io',
             },
         },
         ],
@@ -60,18 +62,50 @@ function copyUrl(){
     tmp.value = url;
     tmp.select();
     document.execCommand("copy");
-    document.body.removeChile(tmp);
+    document.body.removeChild(tmp);
     
     alert("URL이 복사되었습니다.");
 }
 
 function sharefacebook(){
-    let url = window.location.href;
-    let facebook = 'http://www.facebook.com/sharer/sharer/php?u=';
+    let url = location.href;
+    let facebook = 'http://www.facebook.com/sharer/sharer.php?u=';
     let link = facebook + url;
     window.open(link);
+    
+}
+
+function intention_alert(){    
+    alert("재미로 만들었습니다.\n이용 중에 불편하신 내용, 보완하면 좋겠는 점이 있으시다면\n 아래의 피드백 버튼으로 보내주시면 정말 감사하겠습니다.");
 }
 
 copyBtn.addEventListener('click', copyUrl);
-sharefacebook.addEventListener('click', sharefacebook);
-kakaoShare.addEventListener('click, sendLink');
+facebookShare.addEventListener('click', sharefacebook);
+kakaoShare.addEventListener('click', sendLink);
+intention.addEventListener('click', intention_alert);
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById('myBtn');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+    modal.style.display = 'block';
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
