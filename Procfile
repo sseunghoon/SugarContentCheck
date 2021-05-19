@@ -1,1 +1,1 @@
-web: gunicorn SugarContentCheck.wsgi --log-file -
+web: gunicorn scc.wsgi --log-file -
