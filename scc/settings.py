@@ -72,9 +72,10 @@ WSGI_APPLICATION = 'scc.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'waby',
+        'NAME': 'waby$waby',
         'USER': 'waby',
         'PASSWORD': 'betterthanyesterday',
+        'HOST': 'waby.mysql.pythonanywhere-services.com',
     }
 }
 
