@@ -160,13 +160,12 @@ body {
 .waby a{
     width:100%;
     font-family:GmarketSansBold;
+    text-align:center;
+    text-decoration:none;
+    color:#000;
+    font-size:30px;
 }
 
-.waby button{
-    width:100%;
-    height:auto;
-    
-}
 
 
 
