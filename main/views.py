@@ -188,13 +188,13 @@ def result(request, result_id):
     summary = ""
 
     if intensity_sum <= 25:
-        summary = "똥 묻은 꿀"
+        summary = "말랑 부대"
     elif intensity_sum <= 50:
-        summary = "꿀 묻은 똥"
+        summary = "평균 K-ARMY 부대"
     elif intensity_sum <= 75:
-        summary = "도대체 어떤 삶을..?"
+        summary = "강철 부대"
     else:
-        summary = "82년생 김준호"
+        summary = "도대체 어떤 군생활을...?"
 
     percentage = format(percentage, '.2f')
     belongPercentage = format(belongPercentage, '.2f')
