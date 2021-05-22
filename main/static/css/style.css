@@ -159,12 +159,13 @@ body {
 
 .waby a{
     width:100%;
+    font-family:GmarketSansBold;
 }
 
 .waby button{
     width:100%;
     height:auto;
-    font-family:GmarketSansBold;
+    
 }
 
 
