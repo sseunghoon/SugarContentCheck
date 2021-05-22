@@ -151,20 +151,21 @@ body {
     padding-bottom:15px;
 }
 
-/* .weniv{
+.waby{
     display:flex;
     justify-content:center;
     padding-bottom:50px;
 }
 
-.weniv a{
+.waby a{
     width:100%;
 }
 
-.weniv img{
+.waby button{
     width:100%;
     height:auto;
-} */
+    font-family:GmarketSansBold;
+}
 
 
 

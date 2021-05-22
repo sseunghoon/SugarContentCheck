@@ -5,3 +5,5 @@ LectureNote
 *.pyc
 __pycache__/
 db.sqlit
+
+settings.py
