@@ -74,7 +74,7 @@ DATABASES = {
         'NAME': 'waby$waby',
         'USER': 'waby',
         'PASSWORD': 'betterthanyesterday',
-        'HOST': 'waby.mysql.pythonanywhere-services.com',
+        'HOST': '0.0.0.0',
     },
     'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"

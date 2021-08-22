@@ -1,0 +1,136 @@
+betterthanyesterday
+
+데이터베이스나 테이블을 손대지 않고 모델 변경
+1. models.py 수정
+2. python manage.py makemigrations 으로 변경사항에 대한 마이그레이션 만들기
+3. python manage.py migrate 으로 변경사항을 데이터베이스에 적용
+
+1. 가상환경(컨테이너, 도커)을 써주지 않으면, 패키지 버전들을 다 맞춰줘야 함
+그래서 가상환경을 씀으로써 개발환경과 배포환경을 맞출 수 있다.
+
+2. python -m venv venv
+venv라는 가상환경을 만듬
+#가상환경을 새로 만들었으면 그 안에서 패키지들을 다시 설정해줘야함
+
+3. source venv/bin/activate
+가상환경 활성화
+
+5. django-admin startproject scc .
+현재 경로에 프로젝트 설치
+
+6. python manage.py migrate
+
+7. python manage.py startapp main
+
+8. 생활코딩 관계형 데이터 모델링에 들어가면 ERD cloud 사용법을 알 수 있다.
+==>데이터베이스 모델 그리는 것
+==>미리 db모델을 그려놓고 제작하기 위함
+
+11. python manage.py createsuperuser
+admin 생성
+
+12. django template tag 
+=> html에서 python을 쓰는 규칙
+
+13. python manage.py dumpdata main --output data.json --indent 4
+data.json 생성 (--indent 옵션을 예쁘게 들여쓰기 하는 것)
+
+14. python manage.py loaddata data.json
+data.json 수정 후 실행 시 db에 반영
+
+16. Class view 이해하기
+https://docs.djangoproject.com/ko/3.2/topics/class-based-views/
+
+17. template tag에서 if문으로 변수끼리 비교
+https://wangkisa.tistory.com/47
+
+18. git 원격저장소에 있는 파일만 삭제 directory 삭제시 -r 추가
+git rm --cached [File Name]
+
+19. runserver 명령은 개발용으로 임시로 쓰는 서버고 배포에는 부적합
+따라서 웹서버를 사용해야하야함. 하지만 웹서버를 사용할 시 앱마다 가지고 있는
+static 파일에 접근하는 django서버의 기능을 사용하지 못함.
+따라서 static파일들을 한 곳에 모으는 과정이 필요
+
+20. settings.py에 STATIC_ROOT = BASE_DIR / 'staticfiles' 를 추가 후
+python manage.py collectstatic
+=> static 파일들을 한꺼번에 모아줌
+
+21. pip install uwsgi
+
+22. uwsgi --http :80 --home /workspace/SugarContentCheck/venv --chdir /workspace/SugarContentCheck --static-map /static=/workspace/SugarContentCheck/staticfiles/ -w scc.wsgi
+
+uwsgi --http :80 --home /workspace/SugarContentCheck/venv --chdir /workspace/SugarContentCheck -w scc.wsgi
+
+23. 21.05.14 교훈
+오류 발생시 터미널을 꼼꼼히 읽자. 다른 사람의 터미널과 비교해보자
+
+24. 개발자 도구를 키고 있을 때, 새로고침을 길게 누르면 강력 새로고침을 할 수 있게 하는 옵션이 뜬다.
+
+################################################
+[uwsgi.ini] 파일 설명
+
+chdir: django project의 manage.py가 존재하는 경로를 지정해줍니다.
+module: wsgi 파일을 지정해줍니다.
+home: 가상환경의 경로를 지정해줍니다.
+uid, gid: uWSGI를 실행할 사용자 및 사용자그룹을 지정해줍니다.
+http: http 프로토콜을 통해서 요청을 받으며 포트 번호를 지정해줍니다.
+enable-threads: 스레드 사용여부를 결정합니다.
+master: 마스터 프로세스 사용 여부를 결정합니다.
+vacuum: 실행 시 자동 생성되는 파일들을 삭제해줍니다.
+pidfile: 실행되는 프로세스의 id값을 담고 있는 파일, pidfile의 경로를 지정해줍니다.
+logto: 로그파일을 작성할 위치를 설정합니다.
+log-reopen: 재시작할 시 로그를 다시 열어줍니다.
+
+################################################
+
+25. uwsgi -i .config/uwsgi/uwsgi.ini
+wsgi.ini 파일로 uWSGI 실행
+
+26. nginx 설정 값 => nginx/scc.conf
+
+27. cp -f /workspace/SugarContentCheck/.config/nginx/scc.conf /etc/nginx/sites-available/
+=>파일 복사(sites-available은 설정파일들이 있는 곳)
+
+28. ln -sf /etc/nginx/sites-available/scc.conf /etc/nginx/sites-enabled/
+=>파일 연결(sites-enabled는 실행시키고 싶은 파일들을 연결하는 폴더)
+
+29. rm /etc/nginx/sites-enabled/default
+=> 기본 폴더 삭제
+
+30. service nginx start
+nginx 실행
+
+31. service nginx start && /workspace/SugarContentCheck/venv/bin/uwsgi -i /workspace/SugarContentCheck/.config/uwsgi/uwsgi.ini
+
+32. git reset --hard HEAD
+git 명령어 복구
+
+36. heroku login -i
+구름에서 heroku login
+
+37. pip freeze > requirements.txt
+파이썬 관련 라이브러리를 서버에 설치하기 위해 라이브러리 리스트를 txt에 저장
+
+38. git push heroku HEAD:master
+
+39. Error while running '$ python manage.py collectstatic 해결 방법
+heroku config:set DISABLE_COLLECTSTATIC=1
+git push heroku master
+Verifying deploy... done. 이 뜨면
+heroku config:unset DISABLE_COLLECTSTATIC
+heroku run python manage.py collectstatic
+
+40. heroku logs 
+
+41. heroku domain 설정
+https://blog.naver.com/kbs4674/221384347000
+
+42. pythonanywhere bash console에서 mysql 접근
+mysql -u waby -h waby.mysql.pythonanywhere-services.com -p 'waby$waby'
+
+43. pythonanywhere mysql 세팅
+https://gaussian37.github.io/python-etc-pythonanywhere-setting/
+
+44. pythonanywhere 가상환경 진입
+workon (가상환경이름)
